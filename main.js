@@ -1,3 +1,40 @@
+start()
+
+function start(){
+	loadEventListeners();
+}
+
+function loadEventListeners(){
+	const lat = document.querySelector("lat");
+	const long = document.querySelector("long")
+	const submit = document.querySelector("submit")
+
+	submit.addEventListener('click', function(){
+		setView()
+	})
+	
+}
+
+
+
+
+
+
+
+
+// Establishing map on page
+const map = L.map('map').setView([51.505, -0.09], 15);
+
+let Stadia_AlidadeSmoothDark = L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.{ext}', {
+	minZoom: 0,
+	maxZoom: 20,
+	attribution: '&copy; <a href="https://www.stadiamaps.com/" target="_blank">Stadia Maps</a> &copy; <a href="https://openmaptiles.org/" target="_blank">OpenMapTiles</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+	ext: 'png'
+});
+
+Stadia_AlidadeSmoothDark.addTo(map);
+
+=======
 
 
 
