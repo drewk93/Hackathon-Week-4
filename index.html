@@ -17,8 +17,29 @@
      </head>
 <body id="body">
     <main>
+        <div id="mouse-position"></div>
+        <nav class="navbar">
+            
+            <div class="container">
+                <h2 id="nav-header">Jimmy Cooke Maps</h2>
+      
+                <div class="navButtons">
+                  <input id="lat" type="text" name='search' placeholder="Latitude in Digits" >
+                  <input id="long" type="text" name='search' placeholder="Longitude in Digits" >
+                <button id="submit">Search</button>
+                <button id="addMarker">Add Marker</button>
+                <button id="deleteMarker">Delete Marker</button>
+                </div>                
+                
+            </div>
+          </nav>
+
         <div id = "container">
              <div id="map"></div>
+             <div id="coordinates">
+                <p  id = "latDisplay" > Latitude: </p>
+                <p  id = "longDisplay" > Longitude</p>
+             </div>
         <!-- This is the div we'll be using to add map to document -->
         </div>
         

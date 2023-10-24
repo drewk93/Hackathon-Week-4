@@ -9,15 +9,83 @@
     font-size: 18px;
   }
 
- 
+  .navbar {
+    margin-top: -60px;
+    height: 60px;
+    color: whitesmoke;
+    border-bottom: 2px solid #445D48;
+    text-align: left;
+    position: fixed;
+    background: linear-gradient(to right, black,#445D48,black,black,black);
+    width: 100%;
+    z-index: 1
+    }
+
+  .navbar .container {
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    height: 100%;
+    width:L  70%
+  }
+
+  .container #nav-header {
+    width: 30%;
+    margin-left: 30px;
+  }
+
+  .container .navButtons {
+    width: 70%;
+  }
+
+  .navButtons #lat {
+    width: 20%;
+  }
+
+  .navButtons #long {
+    width: 20%
+  }
+
+.active {
+  background-color: green;
+  color: whitesmoke;
+}
 
 #container {
-    height: 500px;
-    width: 80%;
-    border: 5px solid red
+    margin-top: 60px;
+    display: flex;
+    height: 95vh;
+    width: 100%;
+    position: relative;
 } 
 
-#container #map {  
-  height: 500px;
-  outline-style: none; }
+#container #map { 
+  height: 95vh;
+  flex-grow: 1; 
+  outline-style: none;
+  z-index: 0 ;
+}
 
+#container #coordinates {
+  display: flex;
+  color: white;
+  justify-content: space-evenly;
+  height: 30px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;  // If you want it at the bottom of the container
+  left: 0;
+  right: 0;  // Spans the full width
+  z-index: 10;
+  margin-bottom: 20px;
+}
+
+#mouse-position {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 5px;
+  border-radius: 3px;
+  z-index: 1000; // ensure it's above other map layers
+}
