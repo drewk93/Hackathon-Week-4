@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family:'Arial Narrow Bold', sans-serif;
+    font-size: 18px;
+  }
+
+ 
+
+#container {
+    height: 500px;
+    width: 80%;
+    border: 5px solid red
+} 
+
+#container #map {  
+  height: 500px;
+  outline-style: none; }
+
