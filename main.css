@@ -46,9 +46,20 @@
     width: 20%
   }
 
+  .navButtons #addMarker {
+    transition: transform 0.3s; /* smooth transition for scaling */
+  }
+  .navButtons #addMarker:hover {
+    color: orangered;
+    transform: scale(10)
+  }
+  .navButtons #deleteMarker:hover {
+    color: orangered;
+  }
+
+
 .active {
-  background-color: green;
-  color: whitesmoke;
+  color: limegreen;
 }
 
 #container {
@@ -68,7 +79,8 @@
 
 #container #coordinates {
   display: flex;
-  color: white;
+  color: black;
+  font-weight: 600;
   justify-content: space-evenly;
   height: 30px;
   width: 100%;
